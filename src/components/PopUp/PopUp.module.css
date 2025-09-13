@@ -5,6 +5,7 @@
     height: 100vh;
     top: 0;
     left: 0;
+    padding: 0 64px;
     background-color: rgba(0, 0, 0, 0);
     -webkit-backdrop-filter: blur(0px);
     backdrop-filter: blur(0px);
@@ -33,9 +34,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 8px;
     background-color: rgb(17, 17, 17);
-    padding: 32px;
+    padding: 48px 64px;
     border-radius: 20px;
     transform: scale(0.7) translateY(30px);
     opacity: 0;
@@ -69,7 +69,7 @@
     width: 100%;
     color: #FFF;
     font-family: Poppins;
-    font-size: 18px;
+    font-size: 20px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -88,15 +88,15 @@
 }
 
 .form {
+    width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: left;
     gap: 8px;
-    position: relative;
 }
 
 .field {
-    width: 200px;
+    width: 80%;
     height: 40px;
     padding: 0 16px 0 16px;
     align-self: stretch;
@@ -107,7 +107,7 @@
     backdrop-filter: blur(8px);
     color: white;
     font-family: Poppins;
-    font-size: 12px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -124,7 +124,7 @@
 
 .submit {
     display: flex;
-    width: 50px;
+    width: 20%;
     height: 40px;
     justify-content: center;
     align-items: center;
@@ -193,27 +193,31 @@
 
 
 
-/* Медиа-запросы для больших экранов */
-@media (min-width: 768px) {
+@media (max-width: 600px) {
+
+    .logo img {
+        height: 30px;
+    }
+
     .form-wrapper {
-        padding: 40px 48px;
-        gap: 12px;
+        height: 240px;
+        padding: 40px 32px;
     }
 
     .form-wrapper p {
-        font-size: 20px;
+        font-size: 18px;
     }
 
     .field {
-        width: 280px;
+        width: 80%;
         height: 40px;
         padding: 0 16px;
-        font-size: 14px;
+        font-size: 12px;
         border-radius: 12px;
     }
 
     .submit {
-        width: 50px;
+        width: 20%;
         height: 40px;
         padding: 12px;
         border-radius: 12px;
@@ -228,31 +232,33 @@
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
+
+    .pop-up {
+        padding: 0 64px !important;
+    }
 
     .logo {
         width: 220px;
     }
 
     .form-wrapper {
-        padding: 48px 56px;
-        gap: 16px;
         border-radius: 24px;
     }
 
     .form-wrapper p {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     .field {
-        width: 320px;
+        width: 80%;
         height: 40px;
         padding: 0 16px;
         font-size: 15px;
     }
 
     .submit {
-        width: 50px;
+        width: 20%;
         height: 40px;
         padding: 14px;
     }
