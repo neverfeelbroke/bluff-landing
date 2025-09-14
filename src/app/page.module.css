@@ -149,7 +149,13 @@
   color: white;
   background-color: #D00F3F;
   cursor: pointer;
+  transition: 0.3s;
   
+}
+
+.join:hover {
+  background-color: #980d30;
+  transition: 0.3s;
 }
 
 .footer-wrapper {
