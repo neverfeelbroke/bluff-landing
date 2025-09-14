@@ -29,13 +29,13 @@
 
 .form-wrapper {
     height: 270px;
-    width: 490px;
+    width: 380px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: rgb(17, 17, 17);
-    padding: 48px 64px;
+    padding: 48px;
     border-radius: 20px;
     transform: scale(0.7) translateY(30px);
     opacity: 0;
@@ -199,9 +199,13 @@
         padding: 0 32px !important;
     }
 
+    .logo img {
+        height: 35px;
+    }
+
     .form-wrapper {
-        height: 240px;
-        padding: 40px 32px;
+        height: 220px;
+        padding: 32px 32px;
     }
 
     .form-wrapper p {
