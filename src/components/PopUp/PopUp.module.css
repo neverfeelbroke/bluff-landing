@@ -133,6 +133,12 @@
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease, opacity 0.3s ease;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background-color: #980d30;
+    transition: 0.3s;
 }
 
 .submit:disabled {
